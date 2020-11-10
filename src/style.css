@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.corona-image {
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.container {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.content {
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 0 5px #999;
+  width: 90%;
+  height: 30vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: space-around;
+}
+
+.infected {
+  border-radius: 10px;
+  border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+}
+.recovered {
+  border-radius: 10px;
+  border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+}
+.death {
+  border-radius: 10px;
+  border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+}
+
+.chart {
+  width: 70%;
+  margin: auto;
+}
+
+.bar {
+  width: 85%;
+  margin: auto;
+}
+
+.loading {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+  margin-top: 20%;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.country-picker {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 772px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .infected,
+  .recovered,
+  .death,
+  .content {
+    width: 100%;
+  }
+  .content {
+    align-items: center;
+  }
+  .corona-image {
+    width: 60%;
+  }
+}
