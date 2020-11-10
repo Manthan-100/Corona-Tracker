@@ -13,7 +13,7 @@ class Card extends Component {
                 <CountUp
                   start={0}
                   end={this.props.confirmed}
-                  duration={2.5}
+                  duration={2.4}
                   separator=","
                 ></CountUp>
               </h3>
